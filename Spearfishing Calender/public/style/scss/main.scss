@@ -1,0 +1,24 @@
+@use './abstract/_variables';
+@use './abstract/_function';
+@use './base/_reset';
+@use './base/_typography';
+@use './layout/_grid';
+@use './components/_header';
+@use './components/_buttons';
+@use './components/_main-cmps';
+@use './components/_navigation-bar';
+@use './components/_chat';
+
+
+@media screen and (max-width : 768px) {
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    width: 90%;
+}
+article{
+    min-height: 10em;
+}
+}

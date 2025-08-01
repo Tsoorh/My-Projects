@@ -1,0 +1,30 @@
+:root {
+  font-size: var(--font-size-primary);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-underline-wavy {
+  text-decoration: underline wavy 0.08em;
+}
+
+header {
+  @extend .text-bold;
+  color: var(--font-color);
+}
+
+.logo-menu {
+  text-align: center;
+}
+
+.copyright{
+  font-weight:100;
+  font-size: 0.7em;
+  text-align: start;
+  padding: 0;
+}
+

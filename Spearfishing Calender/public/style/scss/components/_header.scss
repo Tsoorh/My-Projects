@@ -1,0 +1,56 @@
+@use '../base/typography';
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.1em rgba(0, 0, 0, 0.311) solid;
+}
+.header-nav,
+.logo {
+  margin-inline-end: 1em;
+  cursor: pointer;
+}
+.header-nav:hover {
+  color: var(--link-hover-color);
+  border-radius: 0.05em solid rgba(0, 0, 0, 0.461);
+  @extend .text-underline-wavy;
+}
+.menu {
+  z-index: 2;
+}
+.menu-icon {
+  padding: 0.1em;
+  border-radius: 0.1em;
+  border: black solid 0.03em;
+  cursor: pointer;
+  display: block;
+}
+.menu-icon:hover {
+  color: aliceblue;
+  background-color: var(--font-color);
+}
+.logo-menu {
+  height: 3em;
+  width: 20em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.logo-menu > img {
+  display: block;
+  height: 15em;
+  width: 22em;
+  background-image: none;
+  position: absolute;
+  top: -5.7em;
+  cursor: pointer;
+}

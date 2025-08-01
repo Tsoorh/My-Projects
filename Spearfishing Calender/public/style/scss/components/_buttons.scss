@@ -1,0 +1,19 @@
+@use '../base/typography';
+button{
+    border-radius: 0.8em;
+    border:0.2em #01004bbe solid;
+    color: var(--btn-color);
+    margin:1em 0.1em;
+    cursor:pointer;
+    min-height: 2.5em;
+    min-width: 6em ;
+    transition: 0.5s;
+    @extend .text-bold
+}
+
+button:hover{
+    color:  var(--btn-color-hover);
+    background-color:var(--btn-color);
+    border:0.3em #01004b66 solid;
+    min-width: 8em;
+}

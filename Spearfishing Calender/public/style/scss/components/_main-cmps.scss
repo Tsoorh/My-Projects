@@ -1,0 +1,20 @@
+main{
+    width: 60em;   
+    left: 11em;
+    margin-block-start: 3.6em;
+    margin-inline-end: 1em;
+    overflow: hidden;
+    margin-top: 3.6em;
+} 
+article{
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 1em;
+    max-width: 25em;
+    min-width: 25em;
+    border: 0.05em rgba(24, 24, 25, 0.489) solid;
+    box-shadow: 0.1em 0.05em 0.05em rgba(70, 78, 81, 0.489);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

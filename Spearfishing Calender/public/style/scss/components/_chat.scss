@@ -1,0 +1,17 @@
+.chat{
+    grid-area: chat;
+}
+.chat>form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 3em;
+}
+[name="message"]{
+    height: 5em;
+    width: 20em;
+    margin-block-end: 1em;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+}
