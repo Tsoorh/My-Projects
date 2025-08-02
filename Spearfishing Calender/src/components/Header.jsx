@@ -10,7 +10,6 @@ function Header(props) {
     console.log("Nav to -", name);
   }
   function onHandleMenu() {
-    console.log("open/close");
     props.onOpen();
   }
 
