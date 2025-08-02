@@ -1,27 +1,22 @@
 @use '../base/typography';
 
 .navbar{
-    position: fixed;
     display: flex;
     flex-direction: column;
-    margin-block-start: var(--header-gap);
     padding-inline-start: 1em;
     background-color: var(--primary-color);
     color: var(--font-color);
-    height: 86%;
-    min-width: 5.5em;
     padding-top: 1em;
     border-radius: var(--border-radius);
     border: 0.05em rgba(0, 0, 0, 0.648) solid;
-    transition: 0.5s;
-    left:-13em;
+    transition: 0.7s;
     justify-content: space-between;
     text-align: start;
+    transform: translateX(-100%);
     font-size: var(--font-size-secondary);
     @extend .text-bold;
-
     &.open-navbar{
-    left:0;
+    transform: translateX(0); 
 }
 }
 .nav-list{
