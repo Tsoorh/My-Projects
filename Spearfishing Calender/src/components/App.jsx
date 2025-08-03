@@ -10,15 +10,16 @@ function App(){
   const [photoCounter,setPhotoCounter] = useState(0);
 
   useEffect(()=>{
-    const intervalId = setInterval(() => {
-      setPhotoCounter((prev)=>{        
-        if (prev === galleryData.length-1){
-          return 0;
-        }else{
-          return prev + 1 ;
-        }
-      })
+    const intervalId = setInterval(() => {   
+        setPhotoCounter((prevPhoto)=>{  
+          if (prevPhoto === galleryData.length-1){
+            return 0;
+          }else{
+            return prevPhoto + 1 ;
+          }
+        });
     }, 5000);
+
     return()=>clearInterval(intervalId);
   },[]);
 

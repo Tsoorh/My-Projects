@@ -1,7 +1,9 @@
 @use '../base/typography';
+@use '../abstract/function';
 
 header {
-  background-color: var(--primary-color);
+  // background: var(--primary-color);
+  // @extend .cmp-animation;
   display: flex;
   justify-content: space-between;
   align-items: center;

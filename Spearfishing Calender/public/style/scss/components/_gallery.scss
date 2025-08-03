@@ -1,5 +1,50 @@
-.gallery-img{
-    width: 40%;
-    border-radius: 0.3em;
-    transition: 1s;
+@use '../abstract/function';
+
+article{
+    background-color: whitesmoke;
+    // @extend .cmp-animation;
+    color: var(--font-color);
+    border-radius: 0.1em;
+    box-shadow: -0.01em -0.01em 0.1em 0.2em var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+article > p {
+    font-size: small;
+    margin:0;
+}
+
+.gallery-img{
+    overflow: hidden;
+    width: 70%;
+    border-radius: 0.3em ;
+    display: block;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+}
+.fade-in{    
+    opacity: 1;
+} 
+.fade-out{
+    opacity: 0;
+}
+
+// @keyframes fadeIn{
+//     from{
+//         opacity: 0;
+//     }
+//     to{
+//         opacity: 1;
+//     }
+// }
+// @keyframes fadeOut{
+//     from{
+//         opacity: 1;
+//     }
+//     to{
+//         opacity: 0;
+//     }
+// }

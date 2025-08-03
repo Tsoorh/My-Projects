@@ -5,10 +5,10 @@
 @use './layout/_grid';
 @use './components/_header';
 @use './components/_buttons';
-@use './components/_main-cmps';
 @use './components/_navigation-bar';
 @use './components/gallery';
 @use './components/_chat';
+@use './pages/index.scss';
 
 
 @media screen and (max-width : 768px) {

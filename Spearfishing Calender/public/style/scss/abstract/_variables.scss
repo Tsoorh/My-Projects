@@ -1,5 +1,8 @@
 :root{
     --primary-color: rgb(136, 177, 204);
+    // --primary-color: rgb(169, 217, 225);
+    --primary-gradient: linear-gradient(139deg,rgb(136, 177, 204) 0%, rgba(1, 32, 61, 1) 100%);
+    --secondary-gradient: linear-gradient(139deg,rgb(175, 199, 216) 0%, rgb(222, 239, 255) 100%);
     --font-size-primary: 1.3em;
     --font-size-secondary: 1.1em;
     --font-color: rgb(1, 32, 61);
@@ -10,3 +13,4 @@
     --border-radius:0.3em;
     --header-gap:2.95em;
 }
+
