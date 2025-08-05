@@ -1,14 +1,18 @@
 @use '../base/typography';
 
 .navbar{
-    // background: var(--primary-color);
+    position: fixed;
+    height: 85.5%;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
     display: flex;
+    color: var(--font-color);
     flex-direction: column;
     padding-inline-start: 1em;
-    color: var(--font-color);
+    color: var (--font-color);
     padding-top: 1em;
     border-radius: 0.3em;
-    border: 0.05em rgba(0, 0, 0, 0.648) solid;
     transition: 0.7s;
     justify-content: space-between;
     text-align: start;

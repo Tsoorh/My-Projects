@@ -1,11 +1,11 @@
 @use '../abstract/function';
 
 article{
-    background-color: whitesmoke;
-    // @extend .cmp-animation;
+    // background: ;
+    @extend .cmp-animation;
     color: var(--font-color);
     border-radius: 0.1em;
-    box-shadow: -0.01em -0.01em 0.1em 0.2em var(--primary-color);
+    // box-shadow: -0.01em -0.01em 0.1em 0.2em var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

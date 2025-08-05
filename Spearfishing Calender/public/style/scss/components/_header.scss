@@ -2,6 +2,9 @@
 @use '../abstract/function';
 
 header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color);
   // background: var(--primary-color);
   // @extend .cmp-animation;
   display: flex;

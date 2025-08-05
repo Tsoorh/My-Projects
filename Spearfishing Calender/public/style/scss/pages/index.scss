@@ -1,5 +1,5 @@
 @use '../abstract/function';
 
 body{
-    @extend .cmp-animation;
+    background-color: var(--primary-color);
 }

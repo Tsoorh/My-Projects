@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Header from "./Header"
 import NavigationBar from "./NavigationBar";
 import Gallery from "./Gallery";
+import Welcome from "./Welcome";
 import galleryData from "../data/gallery-catches";
 
 
@@ -30,13 +31,17 @@ function App(){
 
 
   return(
-    <div className="grid-container">
+    <div>
+      
       <Header
       onOpen={onOpen}
       />
       <NavigationBar
       isOpen={isOpen}
       />
+    <div className="grid-container">
+      <Welcome />
+    </div>
       <Gallery
       id={galleryData[photoCounter].id}
       name={galleryData[photoCounter].name}
