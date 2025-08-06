@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from "react";
 import Header from "./Header"
 import NavigationBar from "./NavigationBar";
-import Gallery from "./Gallery";
 import Welcome from "./Welcome";
+import Gallery from "./Gallery";
+import Visibility from "./Visibility";
+import Aliexpress from "./Aliexpress";
+import Forecast from "./Forecast";
 import galleryData from "../data/gallery-catches";
+
 
 
 function App(){
@@ -32,7 +36,6 @@ function App(){
 
   return(
     <div>
-      
       <Header
       onOpen={onOpen}
       />
@@ -42,12 +45,17 @@ function App(){
     <div className="grid-container">
       <Welcome />
     </div>
+    <div className="grid-sub-container">
       <Gallery
       id={galleryData[photoCounter].id}
       name={galleryData[photoCounter].name}
       date={galleryData[photoCounter].date}
       imgSrc={galleryData[photoCounter].imgSrc}
       />
+      <Visibility/>
+      <Forecast/>
+      <Aliexpress/>
+      </div>
     </div>
     )
 }

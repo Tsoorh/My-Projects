@@ -2,8 +2,8 @@ import React from "react";
 
 function Visibility(){
     return(
-        <article className="visibility-updates">
-            <h1>visibility updates</h1>
+        <article className="grid-visibility">
+            <h3>visibility updates</h3>
             <button className="read-more">read more</button>
         </article>
         )

@@ -1,3 +1,5 @@
+@use "../abstract/function";
+
 h1,
 h2,
 h3,
@@ -10,13 +12,26 @@ body {
   margin: 0;
   padding: 0;
 }
-
 li {
   list-style-type: none;
   margin-bottom: 1em;
 }
-
 .icon {
   max-height: 0.7em;
   margin-right: 0.2em;
 }
+article{
+    @extend .cmp-animation;
+    color: var(--font-color);
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+article > p {
+    font-size: small;
+    margin: 0 0.5em;
+}
+article > h3 {
+margin-top: 0.5em;}

@@ -1,23 +1,37 @@
 .grid-container{
     display: grid;
-    grid-template-columns: 10em repeat(16,1fr);
-    grid-template-rows:auto repeat(16,1fr);
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
 
     width: 100vw;
     height: 100vh;
 }
-.grid-header{
-    grid-column: 1/-1;
-    grid-row: 1;
-    height: auto;
-}
-.grid-navigation{
-    grid-column: 1/2;
-    grid-row: 2/-1;
-}
-.grid-gallery{
-}
+
 .welcome-div{
     grid-column: 1/-1;
-    grid-row: 2/16;
+    grid-row: 1/8;
+}
+
+.grid-sub-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap :1.5em;
+}
+
+.grid-gallery{
+    grid-column: 3/6;
+    grid-row: 1/4;
+}
+.grid-visibility{
+    grid-column: 6/9;
+    grid-row: 1/4;
+}
+.grid-forecast{
+    grid-column: 9/12;
+    grid-row: 1/4;
+}
+.grid-aliexpress{
+    grid-column: 3/12;
+    grid-row: 4/7;
 }

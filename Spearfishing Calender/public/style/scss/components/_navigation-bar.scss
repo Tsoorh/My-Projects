@@ -18,7 +18,7 @@
     text-align: start;
     transform: translateX(-100%);
     font-size: var(--font-size-secondary);
-    @extend .text-bold;
+    // @extend .text-bold;
     &.open-navbar{
     transform: translateX(0); 
 }
